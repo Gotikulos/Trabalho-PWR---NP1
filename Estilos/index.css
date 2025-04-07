@@ -160,6 +160,12 @@
     list-style: none;
 }
 
+.referencias_link {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 600;
+}
+
 footer {
     display: flex;
     flex-direction: column;
