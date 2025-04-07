@@ -1,0 +1,162 @@
+.cabecalho_menu {
+    width: 228px; 
+    height: 100px; 
+    background-image: url("../Imagens/unip_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+.container_imagem {
+  width: 150px;
+
+}
+
+.container_botao {
+    display: none;
+}
+
+.container_titulo {
+    font-weight: 900;
+}
+
+.lista_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container_botao:checked~.lista_menu {
+    display: block;
+}
+
+.lista_menu_titulo, .lista_menu_item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+
+.lista_menu_link {
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--amarelo);
+}
+
+.opcoes {
+    display: none;
+}
+
+.container_texto {
+    display: none;
+}
+
+
+.apresentacao_titulo {
+    font-weight: 600;
+    text-align: center;
+}
+
+.titulo_header {
+    font-weight: 900;
+}
+
+.menu_header:checked ~ .lista_menu {
+    display: block;
+}
+
+
+.apresentacao_subtitulo {
+    color: var(--azul);
+    font-weight: 500;
+}
+
+.apresentacao_texto {
+    font-weight: 300;
+}
+
+.matematico, .fisico {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.matematico {
+    background-image: url("../Imagens/matematica.jpg");
+}
+
+.fisico {
+    background-image: url("../Imagens/fisico.jpg");
+}
+
+.links {
+    padding: 5em;
+    align-items: center;
+    text-align: center;
+}
+
+.links_imagens {
+    display: flex;
+    justify-content: center;
+}
+
+.links_titulo {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.links_subtitulo {
+    color: var(--azul);
+    font-weight: 500;
+    text-align: center;
+}
+
+.creditos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul--quase--claro);
+    padding: 0;
+    margin: 0;
+}
+
+.creditos.lista {
+    width: 60vw;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.creditos_item {
+    list-style: none;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

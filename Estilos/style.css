@@ -1,0 +1,23 @@
+@import url("./index.css");
+@import url("./matematico.css");
+
+
+
+:root{
+    --fonte: "Roboto Slab", serif;
+    --azul: #205595;
+    --azul--claro: #83aae4;
+    --azul--escuro:#233171;
+    --azul--quase--claro: #456f90;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --amarelo: #f7f012;
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--azul--claro);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
