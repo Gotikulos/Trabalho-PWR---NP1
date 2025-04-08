@@ -1,6 +1,7 @@
 @import url("./index.css");
 @import url("./matematico.css");
 @import url("./referencias.css");
+@import url("./fisica.css");
 
 
 
@@ -13,6 +14,7 @@
     --preto: #000000;
     --branco: #FFFFFF;
     --amarelo: #f7f012;
+    --gradiente: linear-gradient(90deg, #4a90e2, #9013fe);
 }
 
 body {
@@ -21,4 +23,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.texto_negrito {
+    font-weight: 600;
+}
+
+.texto_cor {
+    color: var(--azul--escuro);
+}
+
+.texto_italico {
+    font-style: italic;
+    font-weight: 300;
 }

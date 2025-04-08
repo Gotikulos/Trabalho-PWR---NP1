@@ -1,0 +1,28 @@
+.exemplo_matriz {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #f3f3f3;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+.exemplo_matriz h2 {
+    color: #4CAF50;
+}
+.exemplo_matriz table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+.exemplo_matriz th, .exemplo_matriz td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+.exemplo_matriz th {
+    background-color: #dcedc8;
+}
+.botao_autor a {
+    text-decoration: none;
+}

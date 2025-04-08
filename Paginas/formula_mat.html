@@ -3,48 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho Autor Matemático</title>
+    <title>Entendendo Matrizes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="stylesheet" href="../Estilos/formula_mat.css">
+    <style>
+      
+    </style>
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="container">
-            <input class="container_botao" type="checkbox" id="menu">
-            <label for="menu" class="container_rotulo">
-                <span class="cabecalho_menu container_imagem"></span>
-            </label>
-            <ul class="lista_menu">
-            <li class="lista_menu_item">
-                    <a href="../index.html" class="lista_menu_link"> PAGINA INICIAL</a>
-            </li>
-            <li class="lista_menu_item">
-                <a href="./matematico.html" class="lista_menu_link"> MATEMÁTICA </a>
-            </li>
-            <li class="lista_menu_item">
-                <a href="./fisico.html" class="lista_menu_link"> FISÍCA </a>
-            </li>
-            <li class="lista_menu_item">
-                <a href="a" class="lista_menu_link"> SOBRE NÓS </a>
-            </li>
-            </ul>
-        </div>
-        <h1 class="container_titulo"> 
-            Ciência da Computação
-        </h1>
+    <header>
+        <h1>🔢 Entendendo Matrizes</h1>
     </header>
     
-    <section class="apresentacao">
-        <h1 class="apresentacao_titulo">  NOME DO EXEMPLO MATEMATICO </h1>
+    <section class="analogia">
+        <h2>📦 O que é uma Matriz?</h2>
+        <p>
+            Uma <strong>matriz</strong> é uma estrutura matemática organizada em forma de <strong>linhas e colunas</strong>, como se fosse uma tabela. 
+            Cada valor dentro dessa tabela é chamado de <em>elemento</em> da matriz. Esse tipo de organização é muito útil para representar informações de forma estruturada e facilitar cálculos.
+        </p>
+        <p>
+            Por exemplo, pense em uma <strong>planilha do Excel</strong>: cada célula da planilha pode conter um número, e as linhas e colunas ajudam a localizar cada valor.
+            Isso é uma matriz! Ela é representada por uma letra maiúscula (como A, B ou M), e os elementos são geralmente números.
+        </p>
     </section>
+    
+    <section class="exemplo">
+        <h2>📘 Exemplo de Matriz 2x3</h2>
+        <p>Agora veja uma matriz com <strong>2 linhas</strong> e <strong>3 colunas</strong>, chamada de matriz 2x3:</p>
+        <table>
+            <tr>
+                <th>10</th>
+                <th>20</th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>50</td>
+                <td>60</td>
+            </tr>
+        </table>
+        <p>
+            Essa matriz é útil, por exemplo, para representar dados de duas categorias diferentes com três valores cada.
+            O valor <strong>50</strong> está na <strong>segunda linha</strong> e <strong>segunda coluna</strong>.
+        </p>
+    </section>
+    
+    
+    <section class="aplicacao">
+        <h2>🧠 Para que servem as matrizes?</h2>
+        <p>
+            Matrizes são essenciais em diversas áreas do conhecimento. Aqui estão algumas aplicações:
+        </p>
+        <ul>
+            <li><strong>Computação gráfica</strong>: representar e transformar imagens em jogos, animações e design 3D.</li>
+            <li><strong>Estatística</strong>: organizar dados e aplicar fórmulas estatísticas com agilidade.</li>
+            <li><strong>Física</strong>: resolver sistemas de equações e modelar fenômenos como movimentos e forças.</li>
+            <li><strong>Redes neurais e IA</strong>: representar pesos e conexões entre neurônios artificiais.</li>
+            <li><strong>Álgebra linear</strong>: base para cálculos em engenharia, economia e ciência de dados.</li>
+        </ul>
+        <p>
+            O matemático <strong>James Joseph Sylvester</strong> foi um dos grandes nomes na história das matrizes. Suas contribuições ajudaram a desenvolver a <em>álgebra moderna</em> como conhecemos hoje.
+        </p>
+    </section>
+    
     <section class="mais_autor">
         <div class="links_autor">
-        <button class="botao_autor">
-            <a href="./matematico.html" class="texto_autor"> Sobre o Autor </a>
-        </button>
+            <button class="botao_autor">
+                <a href="../Paginas/matematico.html" class="texto_autor">BIOGRAFIA DO JAMES</a>
+            </button>
+            <button class="botao_autor">
+                <a href="../Paginas/exemplo_mat.html" class="texto_autor">EXEMPLO MATRIZ</a>
+            </button>
         </div> 
     </section>
+
 </body>
-</html>
+</html> 
