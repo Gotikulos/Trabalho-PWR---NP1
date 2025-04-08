@@ -3,82 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autor Matemático</title>
+    <title>Max Planck</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Tiny5&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/fisica.css">
 </head>
 <body>
-    <header class="cabecalho">
+    <header id="cabecalho" class="cabecalho">
         <div class="container">
-            <input class="container_botao" type="checkbox" id="menu">
-            <label for="menu" class="container_rotulo">
-                <span class="cabecalho_menu container_imagem"></span>
-            </label>
-            <ul class="lista_menu">
-            <li class="lista_menu_item">
-                    <a href="../index.html" class="lista_menu_link"> PAGINA INICIAL</a>
-            </li>
-            <li class="lista_menu_item">
-                <a href="./matematico.html" class="lista_menu_link"> MATEMÁTICA </a>
-            </li>
-            <li class="lista_menu_item">
-                <a href="./fisico.html" class="lista_menu_link"> FISÍCA </a>
-            </li>
-            <li class="lista_menu_item">
-                <a href="a" class="lista_menu_link"> SOBRE NÓS </a>
-            </li>
-            </ul>
+            <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+            <nav class="cabecalho_menu">
+                <ul class="lista_menu">
+                    <li class="lista_menu_item">
+                        <a href="../index.html" class="lista_menu_link">Página Inicial</a>
+                    </li>
+                    <li class="lista_menu_item">
+                        <a href="./matematico.html" class="lista_menu_link">Matemática</a>
+                    </li>
+                    <li class="lista_menu_item">
+                        <a href="./fisico.html" class="lista_menu_link ativo">Física</a>
+                    </li>
+                    <li class="lista_menu_item">
+                        <a href="./sobre.html" class="lista_menu_link">Sobre Nós</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <h1 class="container_titulo"> 
-            Ciência da Computação
-        </h1>
     </header>
     
-    <section class="apresentacao">
-        <h1 class="apresentacao_titulo">  NOME DO AUTOR FISICO </h1>
-        <h3 class="apresentacao_subtitulo"> Matemática </h3>
-        <p class="apresentacao_texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper luctus diam quis viverra. Fusce ligula justo, mattis commodo interdum sed, fringilla ac est. Nam interdum at libero vel aliquam. Suspendisse mollis diam a urna maximus, et lacinia felis vestibulum. Etiam nulla mi, vestibulum quis ultrices a, accumsan ut est. Pellentesque nec dolor imperdiet eros iaculis consectetur. Aliquam ipsum ante, volutpat viverra eleifend ut, tempus eget mi. Donec fermentum mi ipsum, eu fermentum dolor aliquam a. Maecenas et ultrices eros. Fusce lacinia, mi eu rhoncus hendrerit, enim turpis condimentum arcu, vitae commodo magna lorem vitae turpis. In hac habitasse platea dictumst. Pellentesque id dapibus felis. Aliquam quis orci vitae leo ultricies eleifend. Morbi ac nisl ac augue interdum lacinia. Duis gravida, est non placerat imperdiet, libero felis elementum sapien, in iaculis libero massa a mauris.
-
-            Nulla fermentum turpis at semper gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non luctus elit, ut ultricies metus. Duis fermentum facilisis convallis. Suspendisse augue lectus, mollis a lobortis non, tristique id dui. Maecenas ultricies congue velit in facilisis. Curabitur porttitor lacinia diam. Quisque nec dolor blandit, lacinia ipsum quis, fermentum eros.
-
-            Quisque semper venenatis scelerisque. Nunc bibendum ex vitae nulla facilisis, non elementum diam porta. Vivamus vel pellentesque quam, vel tristique turpis. Etiam pharetra risus nunc, rhoncus maximus purus viverra sit amet. Vestibulum id ante non augue eleifend finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean facilisis enim eu tellus rutrum, vel tincidunt turpis tempus. Pellentesque gravida elit vel ultrices ornare. Donec rhoncus, massa sed egestas vestibulum, mi nulla semper nisl, sit amet ornare lacus enim id lorem. Maecenas sapien sapien, congue vitae velit id, condimentum bibendum libero. Duis non finibus nisl.
-        </p>
+    <main class="apresentacao">
+        <section class="autor">
+            <h1 class="apresentacao_titulo">Max Planck</h1>
+            <div class="apresentacao_imagem">
+                <img src="../Imagens/Max.webp" alt="Foto de Max Planck">
+            </div>
+            <h3 class="apresentacao_subtitulo">Física Quântica</h3>
+            <p class="apresentacao_texto">
+                Max Planck, físico alemão nascido em 1858, é considerado o pai da física quântica por ter proposto, em 1900, que a energia não é emitida de forma contínua, mas sim em pequenos pacotes chamados “quanta”. Essa ideia surgiu como solução para o problema da radiação do corpo negro, que a física clássica não conseguia explicar. Ao introduzir a constante de Planck e a fórmula E = h·f, ele abriu caminho para uma nova era na ciência, influenciando grandes nomes como Einstein e Bohr. Por sua descoberta, recebeu o Prêmio Nobel de Física em 1918.
+            </p>
+        </section>
+        <section class="carreira">
+            <h3 class="apresentacao_subtitulo">Física</h3>
+            <p class="apresentacao_texto">
+                Max Karl Ernst Ludwig Planck foi um físico teórico alemão, nascido em 23 de abril de 1858 em Kiel, Alemanha, e falecido em 4 de outubro de 1947. Ele é amplamente reconhecido como o fundador da teoria quântica, uma das bases da física moderna. Sua carreira acadêmica foi marcada por importantes contribuições à termodinâmica e à física teórica.
+            </p>
+        </section>
         <section class="links_pesquisa">
-            <h3 class="links_subtitulo"> TITULO TRABALHO AUTOR </h3>
+            <h3 class="links_subtitulo">Descoberta da Física Quântica</h3>
             <div class="links_imagens">
-            <div class="links">
-                <div class="matematico"></div>
-                <p class="links_titulo">DESCRIÇÃO TRABALHO</p>
+                <div class="links">
+                    <p class="links_titulo">Descrição Trabalho</p>
+                </div>
             </div>
         </section>
-        <h3 class="apresentacao_subtitulo"> Física </h3>
-        <p class="apresentacao_texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper luctus diam quis viverra. Fusce ligula justo, mattis commodo interdum sed, fringilla ac est. Nam interdum at libero vel aliquam. Suspendisse mollis diam a urna maximus, et lacinia felis vestibulum. Etiam nulla mi, vestibulum quis ultrices a, accumsan ut est. Pellentesque nec dolor imperdiet eros iaculis consectetur. Aliquam ipsum ante, volutpat viverra eleifend ut, tempus eget mi. Donec fermentum mi ipsum, eu fermentum dolor aliquam a. Maecenas et ultrices eros. Fusce lacinia, mi eu rhoncus hendrerit, enim turpis condimentum arcu, vitae commodo magna lorem vitae turpis. In hac habitasse platea dictumst. Pellentesque id dapibus felis. Aliquam quis orci vitae leo ultricies eleifend. Morbi ac nisl ac augue interdum lacinia. Duis gravida, est non placerat imperdiet, libero felis elementum sapien, in iaculis libero massa a mauris.
-
-            Nulla fermentum turpis at semper gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non luctus elit, ut ultricies metus. Duis fermentum facilisis convallis. Suspendisse augue lectus, mollis a lobortis non, tristique id dui. Maecenas ultricies congue velit in facilisis. Curabitur porttitor lacinia diam. Quisque nec dolor blandit, lacinia ipsum quis, fermentum eros.
-
-            Quisque semper venenatis scelerisque. Nunc bibendum ex vitae nulla facilisis, non elementum diam porta. Vivamus vel pellentesque quam, vel tristique turpis. Etiam pharetra risus nunc, rhoncus maximus purus viverra sit amet. Vestibulum id ante non augue eleifend finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean facilisis enim eu tellus rutrum, vel tincidunt turpis tempus. Pellentesque gravida elit vel ultrices ornare. Donec rhoncus, massa sed egestas vestibulum, mi nulla semper nisl, sit amet ornare lacus enim id lorem. Maecenas sapien sapien, congue vitae velit id, condimentum bibendum libero. Duis non finibus nisl.
-        </p>
-        <section class="links_pesquisa">
-            <h3 class="links_subtitulo"> TITULO TRABALHO AUTOR </h3>
-            <div class="links_imagens">
-            <div class="links">
-                <div class="matematico"></div>
-                <p class="links_titulo">DESCRIÇÃO TRABALHO</p>
-            </div>
+        <section class="mais_autor">
+            <div class="links_autor">
+                <button class="botao_autor">
+                    <a href="./formula_fisico.html" class="texto_autor">Trabalho do Autor</a>
+                </button>
+                <button class="botao_autor">
+                    <a href="./exemplo_fisico.html" class="texto_autor">Exemplo Trabalho do Autor</a>
+                </button>
+            </div> 
         </section>
-    <section class="mais_autor">
-        <div class="links_autor">
-        <button class="botao_autor">
-            <a href="./formula_fisico.html" class="texto_autor"> TRABALHO DO AUTOR</a>
-        </button>
-        <button class="botao_autor">
-            <a href="./exemplo_fisico.html" class="texto_autor"> EXEMPLO TRABALHO DO AUTOR</a>
-        </button>
-        </div> 
-    </section>
+    </main>
+
+    <script>
+        let ultimoScroll = 0;
+        const cabecalho = document.getElementById('cabecalho');
+
+        window.addEventListener('scroll', () => {
+            const atualScroll = window.pageYOffset;
+
+            if (atualScroll > ultimoScroll) {
+                // Esconde o cabeçalho ao descer
+                cabecalho.classList.add('escondido');
+            } else {
+                // Mostra o cabeçalho ao subir
+                cabecalho.classList.remove('escondido');
+            }
+
+            ultimoScroll = atualScroll;
+        });
+    </script>
 </body>
 </html>
