@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Planck</title>
+    <title>Site Biográfico - Construção e Pesquisa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="./Estilos/index.css">
 </head>
 <body>
-    <body>
-        <header class="cabecalho">
+        <header id="cabecalho" class="cabecalho">
             <div class="container">
+              <div class="cabecalho_container">
+                <div class="cabecalho_imagem"></div>
                 <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+              </div>
                 <nav class="cabecalho_menu">
                     <ul class="lista_menu">
                         <li class="lista_menu_item">
@@ -47,8 +49,8 @@
         <section class="carreira">
             <h3 class="apresentacao_subtitulo">Física</h3>
             <p class="apresentacao_texto">
-                Fisíca vem do grego antigo "φύσις" que significa "natureza". É uma ciência de observação e leis matemáticas, seu princiapa objetivo é explicar os fenômenos de interações entre matéria, movimento e energia. A fisíca é um dos estudos mais antigos, com seu marco através de observações astronômicas feitas pelos povos antigos do mundo todo usando preceitos da metodologia científica e da linguagem matemática. <a href=".https://brasilescola.uol.com.br/fisica#:~:text=A%20palavra%20F%C3%ADsica%20deriva%20do,entre%20mat%C3%A9ria%2C%20movimento%20e%20energia." class="referencias_link"> [Brasil Escola] </a> <br>
-                A fisíca se divide em duas áreas: <b class="texto_negrito"></b> Fisíca Clássica e Fisíca Moderna, em Fisíca Clássica ela de divide em Mecãnica, Termologia, Eletromagnetismo, Óptica e Ondulatória, investigando os estudos da Grécia Antiga e na Fisíca Clássica temos Relatividade e Mecânica Quãntica que investiga os estudos após o século XX. Sua importância se vem para que possamos compreender o universo ao nosso redor e desenvolver tecnologias para manutenção e vida terrestre, através do estufdo fisico o home conseguiu sair do planeta, investigar oceanos, desenvolver automóveis e toda tenologia que usamos diariamente. <a href="https://mundoeducacao.uol.com.br/fisica" class="referencias_link"> [Mundo Educação] </a> <br>
+                <b class="texto_negrito"> Fisíca </b> vem do grego antigo <b class="texto_italico"> "φύσις" </b> que significa <b class="texto_cor"> "natureza"</b>. É uma ciência de observação e leis matemáticas, seu princiapa objetivo é  explicar <b class="texto_italico"> os fenômenos de interações </b> entre <b class="texto_negrito"> matéria, movimento e energia </b>. A fisíca é um dos estudos mais antigos, com seu marco através de <b class="texto_italico"> observações astronômicas </b> feitas pelos povos antigos do mundo todo usando preceitos da <b class="texto_cor"> metodologia científica </b> e da <b class="texto_cor"> linguagem matemática </b>. <a href=".https://brasilescola.uol.com.br/fisica#:~:text=A%20palavra%20F%C3%ADsica%20deriva%20do,entre%20mat%C3%A9ria%2C%20movimento%20e%20energia." class="referencias_link"> [Brasil Escola] </a> <br>
+                A fisíca se divide em duas áreas: <b class="texto_negrito"> Fisíca Clássica </b> e <b class="texto_negrito"> Fisíca Moderna </b>, na Fisíca Clássica ela de divide em <b class="texto_italico"> Mecãnica, Termologia, Eletromagnetismo, Óptica e Ondulatória </b>, investigando os estudos da Grécia Antiga e na Fisíca Clássica temos <b class="texto_italico"> Relatividade e Mecânica Quãntica </b> que investiga os estudos após o século XX. Sua importância se vem para que possamos compreender o universo ao nosso redor e desenvolver tecnologias para manutenção e vida terrestre. Através do estudo fisico o homem conseguiu sair do planeta, investigar oceanos, desenvolver automóveis e toda tenologia que usamos diariamente. <a href="https://mundoeducacao.uol.com.br/fisica" class="referencias_link"> [Mundo Educação] </a> <br>
         </section>
         
         <section class="links_pesquisa">
@@ -91,11 +93,6 @@
               <p>&copy; 2025 UNIP - Todos os direitos reservados.</p>
             </div>
           </footer>
-          
-
-<!-- Font Awesome para os ícones -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
     </main>
 
     <script>
@@ -106,13 +103,10 @@
             const atualScroll = window.pageYOffset;
 
             if (atualScroll > ultimoScroll) {
-                // Esconde o cabeçalho ao descer
                 cabecalho.classList.add('escondido');
             } else {
-                // Mostra o cabeçalho ao subir
                 cabecalho.classList.remove('escondido');
             }
-
             ultimoScroll = atualScroll;
         });
     </script>

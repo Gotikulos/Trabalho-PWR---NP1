@@ -18,11 +18,11 @@
 }
 
 body {
-    font-family: var(--fonte);
-    background-color: var(--azul--claro);
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 .texto_negrito {

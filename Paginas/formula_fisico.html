@@ -7,15 +7,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="stylesheet" href="../Estilos/fisica.css">
     <link rel="stylesheet" href="../Estilos/formula_fisica.css">
     <style>
     </style>
 </head>
 <body>
-    <header>
-        <h1>Analogia do "Balde de Energia" — E = h·f</h1>
-    </header>
+    <header  id="cabecalho" class="cabecalho">
+    <div class="container">
+        <div class="cabecalho_container">
+          <div class="cabecalho_imagem"></div>
+          <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+        </div>
+        <nav class="cabecalho_menu">
+            <ul class="lista_menu">
+                <li class="lista_menu_item">
+                    <a href="../index.html" class="lista_menu_link">PÁGINA INICIAL</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="./matematico.html" class="lista_menu_link">MATEMÁTICA</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="./fisico.html" class="lista_menu_link">FÍSICA</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="../index.html#sobre-nos" class="lista_menu_link">SOBRE NÓS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
     <section class="analogia">
         <h2>🪣 Entendendo a Fórmula</h2>
         <p>Imagina que a energia não é uma água corrente contínua, mas sim vem em baldes individuais. Cada balde representa um fóton, que é uma "porção" de energia.</p>
@@ -47,5 +68,22 @@
             </button>
         </div> 
     </section>
+
+    <script>
+        let ultimoScroll = 0;
+        const cabecalho = document.getElementById('cabecalho');
+
+        window.addEventListener('scroll', () => {
+            const atualScroll = window.pageYOffset;
+
+            if (atualScroll > ultimoScroll) {
+                cabecalho.classList.add('escondido');
+            } else {
+                cabecalho.classList.remove('escondido');
+            }
+
+            ultimoScroll = atualScroll;
+        });
+    </script>
 </body>
 </html>

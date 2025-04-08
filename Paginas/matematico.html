@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="../Estilos/fisica.css">
 </head>
 <body>
-    <header class="cabecalho">
+    <header id="cabecalho" class="cabecalho">
         <div class="container">
-            <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+            <div class="container">
+                <div class="cabecalho_container">
+                  <div class="cabecalho_imagem"></div>
+                  <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+                </div>
             <nav class="cabecalho_menu">
                 <ul class="lista_menu">
                     <li class="lista_menu_item">
@@ -41,16 +45,16 @@
         <p class="apresentacao_texto">
             James Joseph Sylvester foi um dos matemáticos mais influentes do século XIX. Nascido em 1814, em Londres, Inglaterra, ele é amplamente reconhecido por ter introduzido o termo "matriz" na matemática e por desenvolver, junto com <strong>Arthur Cayley</strong>, os fundamentos da <strong>teoria das matrizes</strong>. Essa nova abordagem possibilitou avanços significativos na álgebra, geometria e, mais tarde, na computação.<br><br>
 
-            Sylvester demonstrou talento precoce para a matemática, mas enfrentou barreiras religiosas e sociais ao longo da vida. Como judeu em uma sociedade altamente discriminatória, ele foi impedido de ocupar cargos formais em algumas instituições britânicas, o que o levou a lecionar e pesquisar nos Estados Unidos por um período. Ele foi professor na <strong>Universidade Johns Hopkins</strong>, onde ajudou a fundar o primeiro programa de pós-graduação em matemática dos EUA e lançou o influente periódico <em>American Journal of Mathematics</em>.<br><br>
+            Sylvester demonstrou talento precoce para a matemática, mas enfrentou barreiras religiosas e sociais ao longo da vida. Como judeu em uma sociedade altamente discriminatória, ele foi impedido de ocupar cargos formais em algumas instituições britânicas, o que o levou a lecionar e pesquisar nos Estados Unidos por um período. Ele foi professor na <strong>Universidade Johns Hopkins</strong>, onde ajudou a fundar o primeiro programa de pós-graduação em matemática dos EUA e lançou o influente periódico <em>American Journal of Mathematics</em> <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Sylvester/"> [MacTutor History of Mathematics Archive]</a> .<br><br>
 
             Seus trabalhos incluem contribuições à <strong>teoria dos invariantes</strong>, <strong>álgebra abstrata</strong>, <strong>determinantes</strong>, <strong>formas algébricas</strong> e <strong>combinatória</strong>. Foi também um dos pioneiros na utilização de métodos simbólicos em álgebra. Além disso, Sylvester era um amante da linguagem e da poesia, e via a matemática como uma forma de arte.<br><br>
 
-            A pesquisa de Sylvester ajudou a resolver sistemas lineares complexos e a entender <strong>transformações lineares</strong>, elementos que são base para áreas como <strong>programação</strong>, <strong>inteligência artificial</strong>, <strong>engenharia</strong> e <strong>simulações gráficas</strong> na atualidade. Seu legado continua presente nos currículos acadêmicos e na base teórica de diversas tecnologias modernas.
+            A pesquisa de Sylvester ajudou a resolver sistemas lineares complexos e a entender <strong>transformações lineares</strong>, elementos que são base para áreas como <strong>programação</strong>, <strong>inteligência artificial</strong>, <strong>engenharia</strong> e <strong>simulações gráficas</strong> na atualidade. Seu legado continua presente nos currículos acadêmicos e na base teórica de diversas tecnologias modernas <a href="https://www.somatematica.com.br/biograf/sylvester.php"> [Só Matemática]</a>
 
         </p>
         <h3 class="apresentacao_subtitulo">Matemática</h3>
         <p class="apresentacao_texto">
-            Sylvester também contribuiu com áreas como a teoria dos invariantes e determinantes. Ele foi professor em instituições renomadas, como a Universidade Johns Hopkins, e fundou o periódico <em>American Journal of Mathematics</em>. Sua paixão pela matemática e sua habilidade de ver conexões abstratas influenciaram profundamente gerações futuras de matemáticos e cientistas.
+            Sylvester também contribuiu com áreas como a teoria dos invariantes e determinantes. Ele foi professor em instituições renomadas, como a Universidade Johns Hopkins, e fundou o periódico <em>American Journal of Mathematics</em>. Sua paixão pela matemática e sua habilidade de ver conexões abstratas influenciaram profundamente gerações futuras de matemáticos e cientistas <a href="https://en.wikipedia.org/wiki/James_Joseph_Sylvester"> [Wikipedia] </a> .
         </p>
         <section class="links_pesquisa">
             <h3 class="links_subtitulo">Descoberta da Teoria das Matrizes</h3>
@@ -63,7 +67,7 @@
         <section class="mais_autor">
             <div class="links_autor">
                 <button class="botao_autor">
-                    <a href="../Paginas/formula_mat.html" class="texto_autor">TRABALHO DO JAMES</a>
+                    <a href="../Paginas/formula_mat.html" class="texto_autor">TRABALHO DE JAMES</a>
                 </button>
                 <button class="botao_autor">
                     <a href="../Paginas/exemplo_mat.html" class="texto_autor">EXEMPLO DE MATRIZES</a>
@@ -71,5 +75,24 @@
             </div> 
         </section>
     </main>
+
+    <script>
+        let ultimoScroll = 0;
+        const cabecalho = document.getElementById('cabecalho');
+
+        window.addEventListener('scroll', () => {
+            const atualScroll = window.pageYOffset;
+
+            if (atualScroll > ultimoScroll) {
+                // Esconde o cabeçalho ao descer
+                cabecalho.classList.add('escondido');
+            } else {
+                // Mostra o cabeçalho ao subir
+                cabecalho.classList.remove('escondido');
+            }
+
+            ultimoScroll = atualScroll;
+        });
+    </script>
 </body>
 </html>

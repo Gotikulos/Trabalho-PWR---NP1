@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Tiny5&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Estilos/exemplo_mat.css">
-    <link rel="stylesheet" href="../Estilos/index.css"
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="../Estilos/fisica.css">
 </head>
 <body>
-    <header class="cabecalho">
+    <header id="cabecalho" class="cabecalho">
         <div class="container">
-            <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+            <div class="cabecalho_container">
+              <div class="cabecalho_imagem"></div>
+              <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+            </div>
             <nav class="cabecalho_menu">
                 <ul class="lista_menu">
                     <li class="lista_menu_item">
@@ -39,8 +39,7 @@
     <section class="apresentacao">
         <h1 class="apresentacao_titulo">Exemplo Prático com Matrizes</h1>
     </section>
-
-    <<section class="aplicacao">
+    <section class="apresentacao">
         <h2>🧾 Exemplo Fictício: Produção de uma Fábrica</h2>
         <p>
             Imagine que uma fábrica produz três tipos de produtos: A, B e C. Em dois dias diferentes, ela registra a quantidade produzida de cada um:
@@ -94,5 +93,22 @@
             </button>
         </div> 
     </section>
+
+    <script>
+        let ultimoScroll = 0;
+        const cabecalho = document.getElementById('cabecalho');
+
+        window.addEventListener('scroll', () => {
+            const atualScroll = window.pageYOffset;
+
+            if (atualScroll > ultimoScroll) {
+                cabecalho.classList.add('escondido');
+            } else {
+                cabecalho.classList.remove('escondido');
+            }
+
+            ultimoScroll = atualScroll;
+        });
+    </script>
 </body>
 </html>

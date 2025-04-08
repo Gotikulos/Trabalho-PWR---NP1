@@ -6,6 +6,32 @@ body {
     color: #333;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+  }
+
+.cabecalho_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+.cabecalho_imagem {
+    width: 228px; 
+    height: 100px; 
+    background-image: url("../Imagens/unip_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    display: inline-block;
+  }
+
 .cabecalho {
     background: linear-gradient(90deg, #4a90e2, #9013fe);
     color: white;

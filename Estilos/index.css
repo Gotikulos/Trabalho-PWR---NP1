@@ -6,6 +6,24 @@ body {
     color: #333;
 }
 
+
+.cabecalho_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.cabecalho_imagem {
+  width: 228px; 
+  height: 100px; 
+  background-image: url("../Imagens/unip_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+  display: inline-block;
+}
+
 .cabecalho {
     background: linear-gradient(90deg, #4a90e2, #9013fe);
     color: white;
@@ -218,4 +236,17 @@ body {
     font-size: 14px;
     color: #ccc;
   }
+
+.texto_negrito {
+    font-weight: 600;
+}
+
+.texto_cor {
+    color: #233171;
+}
+
+.texto_italico {
+    font-style: italic;
+    font-weight: 300;
+}
   

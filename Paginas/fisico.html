@@ -12,7 +12,10 @@
 <body>
     <header id="cabecalho" class="cabecalho">
         <div class="container">
-            <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+            <div class="cabecalho_container">
+              <div class="cabecalho_imagem"></div>
+              <h1 class="cabecalho_titulo">Ciência da Computação</h1>
+            </div>
             <nav class="cabecalho_menu">
                 <ul class="lista_menu">
                     <li class="lista_menu_item">
@@ -42,43 +45,42 @@
             <p class="apresentacao_texto">
                 Max Planck, físico alemão nascido em 1858, é considerado o pai da física quântica por ter proposto, em 1900, que a energia não é emitida de forma contínua, mas sim em pequenos pacotes chamados “quanta”.<br><br>
 
-                Essa ideia surgiu como solução para o problema da radiação do corpo negro, um fenômeno que a física clássica não conseguia explicar. A proposta de Planck revolucionou o entendimento da energia e da luz, ao sugerir que a energia é proporcional à frequência da radiação, sendo expressa pela fórmula <strong>E = h·f</strong>, onde <strong>h</strong> representa a constante de Planck.<br><br>
+                Essa ideia surgiu como solução para o problema da radiação do corpo negro, um fenômeno que a física clássica não conseguia explicar. A proposta de Planck revolucionou o entendimento da energia e da luz, ao sugerir que a energia é proporcional à frequência da radiação, sendo expressa pela fórmula <strong>E = h·f</strong>, onde <strong>h</strong> representa a constante de Planck. <a href="https://www.britannica.com/biography/Max-Planck"> [Enciclopédia Britannica – Max Planck] </a> <br><br>
                 
                 Esse novo modelo foi essencial para o desenvolvimento da física moderna. A ideia de quantização da energia abriu portas para avanços fundamentais na mecânica quântica, sendo posteriormente ampliada por físicos como <strong>Albert Einstein</strong>, <strong>Niels Bohr</strong> e <strong>Werner Heisenberg</strong>. Planck, mesmo cético inicialmente quanto às implicações mais radicais da sua teoria, reconheceu a importância do que havia descoberto.<br><br>
                 
-                Além de suas contribuições científicas, Planck teve uma carreira acadêmica brilhante, lecionando em Berlim e influenciando gerações de físicos. Em 1918, foi agraciado com o <strong>Prêmio Nobel de Física</strong> pelo seu trabalho inovador na física teórica.<br><br>
+                Além de suas contribuições científicas, Planck teve uma carreira acadêmica brilhante, lecionando em Berlim e influenciando gerações de físicos. Em 1918, foi agraciado com o <strong>Prêmio Nobel de Física</strong> pelo seu trabalho inovador na física teórica. <a href="https://www.nobelprize.org/prizes/physics/1918/planck/biographical/"> [NobelPrize.org]</a> <br><br>
                 
                 Mesmo em tempos difíceis, como durante as guerras mundiais e o regime nazista, Planck manteve-se ativo na comunidade científica e defendeu princípios éticos e acadêmicos. Seu legado permanece não apenas na constante que leva seu nome, mas em toda a base da física quântica, essencial para tecnologias modernas como lasers, semicondutores, microprocessadores e até o funcionamento de satélites e celulares.<br><br>
                 
-                Max Planck faleceu em 1947, mas sua influência continua viva nos estudos científicos e na evolução tecnológica do mundo contemporâneo.
-                
-                
+                Max Planck faleceu em 1947, mas sua influência continua viva nos estudos científicos e na evolução tecnológica do mundo contemporâneo <a href="https://www.mpg.de/183298/history">[História do Instituto e do físico Max Planck]</a>            
             </p>
         </section>
+
         <section class="carreira">
             <h3 class="apresentacao_subtitulo">Física</h3>
             <p class="apresentacao_texto">
                 Max Karl Ernst Ludwig Planck foi um físico teórico alemão, nascido em 23 de abril de 1858 em Kiel, Alemanha, e falecido em 4 de outubro de 1947. Ele é amplamente reconhecido como o fundador da teoria quântica, uma das bases da física moderna. Sua carreira acadêmica foi marcada por importantes contribuições à termodinâmica e à física teórica.
             </p>
         </section>
+
         <section class="links_pesquisa">
             <h3 class="links_subtitulo">Descoberta da Física Quântica</h3>
             <div class="links_imagens">
-                <div class="links">
-                    <p class="links_titulo">Descrição Trabalho</p>
-                </div>
             </div>
         </section>
+
         <section class="mais_autor">
             <div class="links_autor">
                 <button class="botao_autor">
-                    <a href="./formula_fisico.html" class="texto_autor">TRABALHO DO MAX</a>
+                    <a href="./formula_fisico.html" class="texto_autor">TRABALHO DE MAX</a>
                 </button>
                 <button class="botao_autor">
                     <a href="./exemplo_fisico.html" class="texto_autor">EXEMPLO FISÍCA QUÂNTICA</a>
                 </button>
             </div> 
         </section>
+
     </main>
 
     <script>
@@ -89,10 +91,8 @@
             const atualScroll = window.pageYOffset;
 
             if (atualScroll > ultimoScroll) {
-                // Esconde o cabeçalho ao descer
                 cabecalho.classList.add('escondido');
             } else {
-                // Mostra o cabeçalho ao subir
                 cabecalho.classList.remove('escondido');
             }
 
